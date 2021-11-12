@@ -7,7 +7,7 @@ module.exports = {
 	name: "deposit",
 	aliases: ["dep"],
 	description: "Deposit your coins into bank",
-	cooldown: 10,
+	cooldown: 5,
 	execute: async (message, args, client) => {
 
 		let user = await UserHook(message.author.id);

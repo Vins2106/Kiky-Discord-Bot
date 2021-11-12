@@ -5,7 +5,7 @@ module.exports = {
 	category: "economy",
 	name: "pay",
 	description: "Pay a user from your wallet to another user wallet",
-	cooldown: 10,
+	cooldown: 5,
 	execute: async (message, args, client) => {
 
 		const user = await UserHook(message.author.id);

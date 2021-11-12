@@ -1,4 +1,6 @@
 {
 	"coin": "<:k_coin:906162817286172753>",
-	"credit_card": "<:k_credit_card:906162889277181954>"
+	"credit_card": "<:k_credit_card:906162889277181954>",
+	"yes": "🎉",
+	"no": "💩"
 }

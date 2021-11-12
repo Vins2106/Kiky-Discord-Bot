@@ -7,7 +7,7 @@ module.exports = {
 	name: "guess",
 	aliases: [],
 	description: "Guess where the emoji",
-	cooldown: 60 * 5,
+	cooldown: 30,
 	execute: async (message, args, client) => {
 
 		const user = await UserHook(message.author.id);
@@ -18,8 +18,8 @@ module.exports = {
 		let reward = getRandomArbitrary(50 * 1000, 200 * 1000);
 
 		let emojis = {
-			yes: "🎉",
-			no: "💩"
+			yes: emoji.yes,
+			no: emoji.no
 		}
 
 		let box = [

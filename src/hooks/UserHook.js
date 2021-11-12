@@ -8,7 +8,6 @@ module.exports = (ID) => new Promise(async (resolve, reject) => {
 		let newUser = new User({
 			ID
 		});
-		newUser.save();
 
 		return resolve(newUser);
 	} else if (checkUser) {

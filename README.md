@@ -10,7 +10,11 @@ this is open source discord bot based on Node.Js v16
 2. cd my-bot
 3. npm i
 4. npm i -g nodemon
-5. put your discord bot token and mongodb url in `.env`
+5. create `.env` file and put this code:
+```env
+TOKEN=discord_bot_token
+MONGODB=mongodb_url
+```
 6. start the bot by click `start.bat` file
 
 # Find any issues or bug?

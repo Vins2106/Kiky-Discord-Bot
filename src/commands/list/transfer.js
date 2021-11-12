@@ -6,7 +6,7 @@ module.exports = {
 	name: "transfer",
 	aliases: ["tf"],
 	description: "Transfer a coins from your bank to another user bank",
-	cooldown: 15,
+	cooldown: 10,
 	execute: async (message, args, client) => {
 
 		const user = await UserHook(message.author.id);

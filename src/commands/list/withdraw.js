@@ -5,7 +5,7 @@ module.exports = {
 	name: "withdraw",
 	aliases: ["wd"],
 	description: "With your coins into from bank to wallet",
-	cooldown: 10,
+	cooldown: 5,
 	execute: async (message, args, client) => {
 
 		let user = await UserHook(message.author.id);

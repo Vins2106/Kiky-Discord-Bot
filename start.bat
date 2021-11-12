@@ -1,0 +1,3 @@
+@echo off
+echo Starting the bot...
+nodemon index.js

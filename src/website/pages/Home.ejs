@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web title -->
+	<title>Kiky</title>
+	<link rel="icon" href="<%= bot.user.displayAvatarURL() %>">
+
+	<!-- Web Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Web SEO -->
+	<meta name="title" content="Kiky">
+	<meta name="description" content="Kiky a discord bot">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://kiky.vinsdev.xyz">
+	<meta property="og:title" content="Kiky">
+	<meta property="og:description" content="Kiky a discord bot">
+	<meta property="og:image" content="<%= bot.user.displayAvatarURL() %>">
+
+	<meta property="twitter:url" content="https://kiky.vinsdev.xyz">
+	<meta property="twitter:title" content="Kiky">
+	<meta property="twitter:description" content="Kiky a discord bot">
+	<meta property="twitter:image" content="<%= bot.user.displayAvatarURL() %>">
+
+	<!-- Web Style -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- Code -->
+	<%- include('./components/Navbar.ejs') %>
+
+	<!-- Script -->
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

@@ -1,37 +1,24 @@
-const { Schema, model } = require("mongoose");
+  const { Schema, model } = require("mongoose");
 module.exports = model(
   "User",
   new Schema({
-    ID: {
+    type: {
       type: String,
       required: true
     },
-    coins: {
-      wallet: {
-        type: Number,
-        required: false,
-        default: 50 * 1000
-      },
-      bank: {
-        type: Number,
-        required: false,
-        default: 10 * 1000
-      }
+    name: {
+      type: String,
+      required: true
     },
-    items: {
-      type: Array,
-      required: false,
-      default: []
+    amount: {
+      type: Number,
+      required: true,
+      default: 0
     },
-    animals: {
-      type: Array,
-      require: false,
-      default: []
-    },
-    banned: {
-      type: Boolean,
-      require: false,
-      default: false
+    date: {
+      type: Date,
+      required: true,
+      default: Date.now
     }
   })
 );

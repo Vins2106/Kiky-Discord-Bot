@@ -4,6 +4,7 @@ const { MessageEmbed } = require("djst-client");
 module.exports = {
 	category: "economy",
 	name: "coins",
+	aliases: ["cash", "c"],
 	description: "Show your current coins",
 	cooldown: 5,
 	execute: async (message, args, client) => {

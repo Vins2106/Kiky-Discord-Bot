@@ -73,6 +73,8 @@ ${msgContainer()}`);
 		})
 
 		collector.on("end", m => {
+			Games.delete(`guess-${message.author.id}`)
+
 			if (right) {
  				return;
 			} else if (!right) {
